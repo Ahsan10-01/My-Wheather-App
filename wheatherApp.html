@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="wheatherApp.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="weather-container">
+            <div class="current-weather">
+                <div class="temp-large" id="current-temp">--°C</div>
+                <div class="conditions">
+                    <div id="precipitation">Precipitation: --%</div>
+                    <div id="humidity">Humidity: --%</div>
+                    <div id="wind">Wind: -- km/h</div>
+                </div>
+                <div class="weather-info">
+                    <h2>Weather</h2>
+                    <div id="date-time">-- --:-- --</div>
+                    <div class="weather-status">
+                        <i id="weather-icon" class="fas fa-sun"></i>
+                        <span id="weather-condition">--</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hourly-forecast">
+                <h3>Hourly Forecast</h3>
+                <div class="hourly-items" id="hourly-items">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="weekly-forecast">
+                <h3>7-Day Forecast</h3>
+                <div id="weekly-forecast">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="wheatherApp.js"></script>
+</body>
+</html>
